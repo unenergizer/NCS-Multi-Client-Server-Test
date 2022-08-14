@@ -114,7 +114,10 @@ public class ClientService implements NcsPacketListener<SimpleBytesNcsPacket>, D
      * @return True if connected, false otherwise
      */
     public boolean isConnected() {
-        if (!initialized) return false;
+        if (!initialized) {
+            System.out.println("This client has not been initialized!");
+            return false;
+        }
         return client.isConnected();
     }
 
