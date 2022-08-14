@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven {url 'https://jitpack.io'}
+}
+
+dependencies {
+    annotationProcessor "org.projectlombok:lombok:1.18.24"
+    implementation "org.projectlombok:lombok:1.18.24"
+
+    implementation "com.github.terefang.NettyClientServer:NcsClient:2022.6.59"
+    implementation "com.github.terefang.NettyClientServer:NcsServer:2022.6.59"
+
+
+    implementation "com.badlogicgames.gdx:gdx-backend-headless:1.11.0"
+}
+
+test {
+    useJUnitPlatform()
+}

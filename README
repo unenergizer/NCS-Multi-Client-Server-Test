@@ -1,0 +1,7 @@
+This is a test of https://github.com/terefang/NettyClientServer to see if you can run a client and a server in one program.
+
+It would be ideal to be able to run multiple servers and clients in one java program.
+
+Here is the code that I have used to do this setup. For some reason it does not work.
+
+Please refer to NCSTest.java in the main package.
