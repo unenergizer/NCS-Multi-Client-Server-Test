@@ -13,16 +13,17 @@ import networking.packet.out.AbstractPacketOut;
 public class ServerService implements NcsPacketListener<SimpleBytesNcsPacket>, Disposable {
 
     /**
-     * Contains the OPCODES and {@link AbstractPacketIn} this {@link ClientService} will listen for.
+     * Contains the OPCODES and {@link AbstractPacketIn} this {@link ServerService} will listen for.
      */
     private final PacketListener packetListener = new PacketListener();
+
     /**
-     * The networking client for this service
+     * The networking server for this service
      */
     private NcsServerService ncsServerService;
 
     /**
-     * If the client service is initialized then this will become true.
+     * If the server service is initialized then this will become true.
      * This is mainly used to prevent {@link NullPointerException}.
      */
     private boolean initialized = false;
